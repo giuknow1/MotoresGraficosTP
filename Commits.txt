@@ -5,3 +5,4 @@
 5. Script "ControlCamara" para movimiento de la camara con el jugador
 6. Creadas carpetas para organizar mejor los Scripts
 7. Agregada funcion de salto en script "ControlJugador"
+8. Creado JetPack usando Probuilder
