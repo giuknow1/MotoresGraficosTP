@@ -1,4 +1,5 @@
 1. Plataforma de testeo de mecánicas
 2. Carpeta de Materiales y carpeta de Scripts
 3. Objeto Jugador y Material para el mismo
-4. ControlCamara para mov. de cámara
+4. Script ControlCamara para mov. de cámara
+5. Script MovCamara para mov. de cámara con el jugador
