@@ -6,24 +6,53 @@ public class ControlJugador : MonoBehaviour
 {
     public float velocidad = 10.0f;
 
+    private Rigidbody rb;
+    public float saltoVelocidad;
+    private bool enSuelo = true;
+    public int maxnSaltos = 4;
+    public int actual = 0;
+
+
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        rb = GetComponent<Rigidbody>();
     }
+
 
     void Update()
+{
+    float mov_vertical = Input.GetAxis("Vertical") * velocidad;
+    float mov_horizontal = Input.GetAxis("Horizontal") * velocidad;
+
+    mov_vertical *= Time.deltaTime;
+    mov_horizontal *= Time.deltaTime;
+
+    transform.Translate(mov_horizontal, 0, mov_vertical);
+
+    if (Input.GetKeyDown("escape"))
     {
-        float mov_vertical = Input.GetAxis("Vertical") * velocidad;
-        float mov_horizontal = Input.GetAxis("Horizontal") * velocidad;
-
-        mov_vertical *= Time.deltaTime;
-        mov_horizontal *= Time.deltaTime;
-
-        transform.Translate(mov_horizontal, 0, mov_vertical);
-
-        if (Input.GetKeyDown("escape"))
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
+        Cursor.lockState = CursorLockMode.None;
     }
+
+    //Salto
+
+    if (Input.GetKeyDown(KeyCode.Space) && (enSuelo || maxnSaltos > actual))
+    {
+        rb.velocity = new Vector3(0f, saltoVelocidad, 0f * Time.deltaTime);
+
+        enSuelo = false;
+        actual++;
+    }
+
 }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        enSuelo = true;
+        actual = 0;
+    }
+
+}
+
+    
+

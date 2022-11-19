@@ -2,3 +2,6 @@
 2. Carpeta de Materiales y carpeta de Scripts
 3. Creado Objeto para el jugador con su material + script de movimiento "ControlJuagdor"
 4. Cambios de sintaxis en script ControlJugador
+5. Script "ControlCamara" para movimiento de la camara con el jugador
+6. Creadas carpetas para organizar mejor los Scripts
+7. Agregada funcion de salto en script "ControlJugador"
