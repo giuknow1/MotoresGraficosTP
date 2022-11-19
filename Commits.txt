@@ -1,3 +1,4 @@
 1. Plataforma de testeo de mecánicas
 2. Carpeta de Materiales y carpeta de Scripts
 3. Creado Objeto para el jugador con su material + script de movimiento "ControlJuagdor"
+4. Cambios de sintaxis en script ControlJugador

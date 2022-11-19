@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControlJugador : MonoBehaviour
 {
-    public float rapidezDesplazamiento = 10.0f;
+    public float velocidad = 10.0f;
 
     void Start()
     {
@@ -13,13 +13,13 @@ public class ControlJugador : MonoBehaviour
 
     void Update()
     {
-        float movimientoAdelanteAtras = Input.GetAxis("Vertical") * rapidezDesplazamiento;
-        float movimientoCostados = Input.GetAxis("Horizontal") * rapidezDesplazamiento;
+        float mov_vertical = Input.GetAxis("Vertical") * velocidad;
+        float mov_horizontal = Input.GetAxis("Horizontal") * velocidad;
 
-        movimientoAdelanteAtras *= Time.deltaTime;
-        movimientoCostados *= Time.deltaTime;
+        mov_vertical *= Time.deltaTime;
+        mov_horizontal *= Time.deltaTime;
 
-        transform.Translate(movimientoCostados, 0, movimientoAdelanteAtras);
+        transform.Translate(mov_horizontal, 0, mov_vertical);
 
         if (Input.GetKeyDown("escape"))
         {
