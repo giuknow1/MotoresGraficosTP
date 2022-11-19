@@ -7,3 +7,4 @@
 7. Agregada funcion de salto en script "ControlJugador"
 8. Creado JetPack usando Probuilder
 9. Creado Script "JetPack" para vuelo limitado por combustible
+10. Agregadas 2 Flickering Lights al personaje
