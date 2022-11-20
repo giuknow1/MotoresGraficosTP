@@ -6,7 +6,7 @@ public class ControlJugador : MonoBehaviour
 {
     public float velocidad = 10.0f;
 
-    public int vida = 3;
+ 
 
     private Rigidbody rb;
     public float saltoVelocidad;
@@ -57,8 +57,30 @@ public class ControlJugador : MonoBehaviour
         actual = 0;
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Bateria") == true)
+        {
+            velocidad++;
+        }
+
+
+        if (other.gameObject.CompareTag("Bateria Mala") == true)
+        {
+            velocidad--;
+        }
+
+
+        if (other.gameObject.CompareTag("Bateria Grande") == true)
+        {
+            velocidad += 3f;
+        }
+    }
+
 
     }
 
-    
+
+
 

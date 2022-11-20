@@ -85,6 +85,18 @@ public class VidasHud : MonoBehaviour
 
         }
 
+
+        if (other.gameObject.CompareTag("Bateria Grande") == true)
+        {
+            vidas = 3;
+            Luz1.SetActive(true);
+            Luz2.SetActive(true);
+            Luz3.SetActive(true);
+
+            escudo = true;
+            EscudoVida.SetActive(true);
+        }
+
     }
 
    
