@@ -15,3 +15,4 @@
 15. Agregado Script para sistema de tres vidas
 16. Agregado efecto de particulas de humo a Jugador
 17. Agregado a Script "VidasHud" la mecánica de escudo (evitar perder una vida)
+18. Parte inicial del nivel
