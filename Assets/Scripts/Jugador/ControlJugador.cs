@@ -6,6 +6,8 @@ public class ControlJugador : MonoBehaviour
 {
     public float velocidad = 10.0f;
 
+    public int vida = 3;
+
     private Rigidbody rb;
     public float saltoVelocidad;
     private bool enSuelo = true;
@@ -55,7 +57,8 @@ public class ControlJugador : MonoBehaviour
         actual = 0;
     }
 
-}
+
+    }
 
     
 
