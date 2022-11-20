@@ -15,6 +15,7 @@ public class ControlJugador : MonoBehaviour
 
     void Start()
     {
+        GestorDeAudio.instancia.ReproducirSonido("Musica");
         rb = GetComponent<Rigidbody>();
     }
 
@@ -38,11 +39,13 @@ public class ControlJugador : MonoBehaviour
 
     if (Input.GetKeyDown(KeyCode.Space) && (enSuelo || maxnSaltos > actual))
     {
-        rb.velocity = new Vector3(0f, saltoVelocidad, 0f * Time.deltaTime);
+            GestorDeAudio.instancia.ReproducirSonido("Salto");
+            rb.velocity = new Vector3(0f, saltoVelocidad, 0f * Time.deltaTime);
 
         enSuelo = false;
         actual++;
-    }
+          
+        }
 
 }
 

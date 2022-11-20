@@ -11,3 +11,4 @@
 11. Agregados 6 prefabs para los PickUps + materiales
 12. Agregado Script para las colisiones del jugador con los PickUps
 13. Agregados Script "GameManager", "Sonido" y "GestorDeAudio" para reproducir sonidos. Agregados sonidos al recolectar PickUps
+14. Agregada Musica de Ambiente y Sonidos al JetPack
