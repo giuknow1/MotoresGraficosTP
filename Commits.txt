@@ -12,3 +12,5 @@
 12. Agregado Script para las colisiones del jugador con los PickUps
 13. Agregados Script "GameManager", "Sonido" y "GestorDeAudio" para reproducir sonidos. Agregados sonidos al recolectar PickUps
 14. Agregada Musica de Ambiente y Sonidos al JetPack
+15. Agregado Script para sistema de tres vidas
+16. Agregado efecto de particulas de humo a Jugador

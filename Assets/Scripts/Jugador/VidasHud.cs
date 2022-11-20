@@ -6,6 +6,8 @@ public class VidasHud : MonoBehaviour
 {
     public int vidas = 2;
 
+    public ParticleSystem humo;
+
     public GameObject Luz1;
     public GameObject Luz2;
     public GameObject Luz3;
@@ -15,6 +17,8 @@ public class VidasHud : MonoBehaviour
         Luz1.SetActive(true);
         Luz2.SetActive(true);
         Luz3.SetActive(false);
+
+        humo.Stop();
     }
 
     public void OnTriggerEnter(Collider other)
@@ -35,6 +39,7 @@ public class VidasHud : MonoBehaviour
             {
                 Luz2.SetActive(true);
                 vidas++;
+                humo.Stop();
             }
             
           
@@ -58,6 +63,7 @@ public class VidasHud : MonoBehaviour
             {
                 Luz2.SetActive(false);
                 vidas--;
+                humo.Play();
             }
 
             if (vidas == 3)
@@ -70,5 +76,7 @@ public class VidasHud : MonoBehaviour
 
     }
 
+   
+    }
 
-}
+
