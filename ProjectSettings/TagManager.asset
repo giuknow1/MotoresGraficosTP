@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Corazon
+  - Escudo
+  - Bateria
+  - Bateria Grande
+  - Energia Mala
+  - Moneda
   layers:
   - Default
   - TransparentFX
@@ -13,7 +19,7 @@ TagManager:
   - UI
   - Jugador
   - Grounded
-  - 
+  - Corazon
   - 
   - 
   - 
