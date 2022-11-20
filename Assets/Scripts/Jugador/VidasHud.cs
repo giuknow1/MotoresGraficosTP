@@ -5,12 +5,14 @@ using UnityEngine;
 public class VidasHud : MonoBehaviour
 {
     public int vidas = 2;
+    public bool escudo = false;
 
     public ParticleSystem humo;
 
     public GameObject Luz1;
     public GameObject Luz2;
     public GameObject Luz3;
+    public GameObject EscudoVida;
 
     public void Start()
     {
@@ -18,15 +20,21 @@ public class VidasHud : MonoBehaviour
         Luz2.SetActive(true);
         Luz3.SetActive(false);
 
+        EscudoVida.SetActive(false);
+
         humo.Stop();
     }
 
     public void OnTriggerEnter(Collider other)
     {
 
-        
+        if (other.gameObject.CompareTag("Escudo") == true)
+        {
+            escudo = true;
+            EscudoVida.SetActive(true);
+        }
 
-        if (other.gameObject.CompareTag("Corazon") == true)
+            if (other.gameObject.CompareTag("Corazon") == true)
             {
 
             if (vidas == 2)
@@ -48,25 +56,28 @@ public class VidasHud : MonoBehaviour
         
 
        
-        if (other.gameObject.CompareTag("Escudo") == true)
+        if (other.gameObject.CompareTag("Moneda") == true)
         {
            
-           
-            
-            if (vidas == 1)
+           if (escudo == true)
+            {
+
+                EscudoVida.SetActive(false);
+                escudo = false;
+            } else if (vidas == 1)
             {
                 Luz1.SetActive(false);
                 vidas--;
             }
 
-            if (vidas == 2)
+            else if (vidas == 2)
             {
                 Luz2.SetActive(false);
                 vidas--;
                 humo.Play();
             }
 
-            if (vidas == 3)
+          else  if (vidas == 3)
             {
                 Luz3.SetActive(false);
                 vidas--;
