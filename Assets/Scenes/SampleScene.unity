@@ -16017,6 +16017,7 @@ GameObject:
   - component: {fileID: 574893613}
   - component: {fileID: 574893618}
   - component: {fileID: 574893619}
+  - component: {fileID: 574893620}
   m_Layer: 6
   m_Name: ObjetoJugador
   m_TagString: Untagged
@@ -16146,6 +16147,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 291c179ceaef4c24e9686837243e729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &574893620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574893612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5419c58ecbadab24d8369405508c7b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &612306927
@@ -17980,6 +17993,87 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &938099738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938099740}
+  - component: {fileID: 938099739}
+  m_Layer: 0
+  m_Name: Sonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &938099739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938099738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48460d86187ebc24dba75e06a1e05d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidos:
+  - Nombre: Bateria
+    ClipSonido: {fileID: 8300000, guid: 7d332401e95eb0b4f8e48df62c0bee1d, type: 3}
+    Volumen: 0.503
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+  - Nombre: Gran Bateria
+    ClipSonido: {fileID: 8300000, guid: f424730c21dbb534988691a29c56e174, type: 3}
+    Volumen: 0.17
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+  - Nombre: Bateria Mala
+    ClipSonido: {fileID: 8300000, guid: f267e5b8bcefca94ab65606dcbcc3822, type: 3}
+    Volumen: 0.492
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+  - Nombre: Moneda
+    ClipSonido: {fileID: 8300000, guid: 7aa7793aed1b1f84bbb5eeddaa4c7ab3, type: 3}
+    Volumen: 0.624
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+  - Nombre: Vida
+    ClipSonido: {fileID: 8300000, guid: d54ab11b747724a48a116c1a497e80d0, type: 3}
+    Volumen: 0.13
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+  - Nombre: Escudo
+    ClipSonido: {fileID: 8300000, guid: 5c1537068f0bebd46af637602400d95d, type: 3}
+    Volumen: 0.703
+    pitch: 1
+    repetir: 0
+    FuenteAudio: {fileID: 0}
+--- !u!4 &938099740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938099738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4893, y: 1.9774, z: -27.1032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &956372644
 Mesh:
   m_ObjectHideFlags: 0
@@ -19514,8 +19608,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22, y: 0.25, z: 0.15}
-  m_Center: {x: -0.12, y: -0.15, z: 0.9}
+  m_Size: {x: 0.22, y: 0.25, z: 0.24}
+  m_Center: {x: -0.06, y: -0.15, z: 0.78}
 --- !u!43 &1135733994
 Mesh:
   m_ObjectHideFlags: 0
@@ -26627,7 +26721,7 @@ PrefabInstance:
     - target: {fileID: 3812010147071842150, guid: 4c3de5f4de0e8344583ed60ce2b185e2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.617
+      value: -7.029
       objectReference: {fileID: 0}
     - target: {fileID: 3812010147071842150, guid: 4c3de5f4de0e8344583ed60ce2b185e2,
         type: 3}
@@ -26961,7 +27055,7 @@ PrefabInstance:
     - target: {fileID: 8489810321014628394, guid: 45fb8ef544f689e4fbb0db42ad907a53,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.434
+      value: -10.655
       objectReference: {fileID: 0}
     - target: {fileID: 8489810321014628394, guid: 45fb8ef544f689e4fbb0db42ad907a53,
         type: 3}
@@ -27065,7 +27159,7 @@ PrefabInstance:
     - target: {fileID: 3637579739836533286, guid: 5808f0388d0a66e49a827e86ce087b48,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.347
+      value: -6.089
       objectReference: {fileID: 0}
     - target: {fileID: 3637579739836533286, guid: 5808f0388d0a66e49a827e86ce087b48,
         type: 3}
@@ -27483,7 +27577,7 @@ PrefabInstance:
     - target: {fileID: 5089359761142901684, guid: 25ef95e1eb846724a8792cce80043f20,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.909
+      value: -4.591
       objectReference: {fileID: 0}
     - target: {fileID: 5089359761142901684, guid: 25ef95e1eb846724a8792cce80043f20,
         type: 3}
@@ -27612,7 +27706,7 @@ PrefabInstance:
     - target: {fileID: 3671628517996432286, guid: c4b58d6c1b4b493489f74d96dfad80a3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.307
+      value: -11.012
       objectReference: {fileID: 0}
     - target: {fileID: 3671628517996432286, guid: c4b58d6c1b4b493489f74d96dfad80a3,
         type: 3}
