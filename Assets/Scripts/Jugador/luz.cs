@@ -20,11 +20,11 @@ public class luz : MonoBehaviour
         titila = true;
 
         this.gameObject.GetComponent<Light>().enabled = false;
-        timeDelay = Random.Range(0.1f, 0.4f);
+        timeDelay = Random.Range(0.2f, 0.4f);
         yield return new WaitForSeconds(timeDelay);
 
         this.gameObject.GetComponent<Light>().enabled = true;
-        timeDelay = Random.Range(0.1f, 0.4f);
+        timeDelay = Random.Range(0.2f, 0.4f);
         yield return new WaitForSeconds(timeDelay);
 
         titila = false;

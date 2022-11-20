@@ -8,3 +8,4 @@
 8. Creado JetPack usando Probuilder
 9. Creado Script "JetPack" para vuelo limitado por combustible
 10. Agregadas 2 Flickering Lights al personaje
+11. Agregados 6 prefabs para los PickUps + materiales

@@ -21,12 +21,7 @@ public class JetPack : MonoBehaviour
  
     void Update()
     {
-        if (c_combust == 0)
-        {
-
-        }
-        else
-        {
+       
 
             if (Input.GetAxis("Jump") > 0f && c_combust > 0f)
             {
@@ -48,5 +43,7 @@ public class JetPack : MonoBehaviour
             }
 
         }
-    }
+    
+
+  
 }
