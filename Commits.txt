@@ -16,3 +16,5 @@
 16. Agregado efecto de particulas de humo a Jugador
 17. Agregado a Script "VidasHud" la mecánica de escudo (evitar perder una vida)
 18. Parte inicial del nivel
+19. Agregado efectos a las baterias que incrementan o disminuyen la velocidad/vida
+20. Creado Script "Vertical" para movimiento de plataformas y avances en el nivel
