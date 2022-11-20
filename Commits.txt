@@ -18,3 +18,4 @@
 18. Parte inicial del nivel
 19. Agregado efectos a las baterias que incrementan o disminuyen la velocidad/vida
 20. Creado Script "Vertical" para movimiento de plataformas y avances en el nivel
+21. Agregadas texturas al escenario
