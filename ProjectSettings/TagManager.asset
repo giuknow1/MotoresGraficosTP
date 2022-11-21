@@ -11,6 +11,7 @@ TagManager:
   - Energia Mala
   - Moneda
   - Llave
+  - Enemigo
   layers:
   - Default
   - TransparentFX

@@ -22,3 +22,4 @@
 22. Emision de luz a los PickUps
 23. Avance en creacion del Nivel
 24. Avance en creacion del Nivel
+25. Creado Prefab de enemigos y script para su funcionamiento (Mov. Vertical)

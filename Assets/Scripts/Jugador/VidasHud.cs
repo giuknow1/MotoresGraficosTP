@@ -59,7 +59,7 @@ public class VidasHud : MonoBehaviour
         
 
        
-        if (other.gameObject.CompareTag("Moneda") == true)
+        if (other.gameObject.CompareTag("Energia Mala") == true || other.gameObject.CompareTag("Enemigo") == true)
         {
            
            if (escudo == true)
@@ -103,8 +103,22 @@ public class VidasHud : MonoBehaviour
 
             escudo = true;
             EscudoVida.SetActive(true);
+
+            GestorDeAudio.instancia.PausarSonido("Alarma");
+            GestorDeAudio.instancia.ReproducirSonido("Repos");
+            humo.Stop();
+
+            
+
         }
 
+        if (other.gameObject.CompareTag("Enemigo") == true)
+        {
+
+            GestorDeAudio.instancia.ReproducirSonido("Bateria Mala");
+
+
+        }
     }
 
     

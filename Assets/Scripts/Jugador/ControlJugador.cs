@@ -11,7 +11,7 @@ public class ControlJugador : MonoBehaviour
     private Rigidbody rb;
     public float saltoVelocidad;
     private bool enSuelo = true;
-    public int maxnSaltos = 4;
+    public int maxnSaltos = 2;
     public int actual = 0;
 
 
@@ -68,7 +68,10 @@ public class ControlJugador : MonoBehaviour
 
         if (other.gameObject.CompareTag("Energia Mala") == true)
         {
-            velocidad--;
+            if (velocidad > 7f)
+            {
+                velocidad--;
+            }
         }
 
 
