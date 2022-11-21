@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+using UnityEngine.SceneManagement;
 
 public class VidasHud : MonoBehaviour
 {
@@ -71,6 +72,12 @@ public class VidasHud : MonoBehaviour
             {
                 Luz1.SetActive(false);
                 vidas--;
+
+                GestorDeAudio.instancia.PausarSonido("Alarma");
+
+                humo.Stop();
+                SceneManager.LoadScene(0);
+                GestorDeAudio.instancia.ReproducirSonido("Reset");
             }
 
             else if (vidas == 2)

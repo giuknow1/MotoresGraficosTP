@@ -12,6 +12,7 @@ TagManager:
   - Moneda
   - Llave
   - Enemigo
+  - Lava
   layers:
   - Default
   - TransparentFX
