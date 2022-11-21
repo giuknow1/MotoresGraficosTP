@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks; 
 
 public class VidasHud : MonoBehaviour
 {
@@ -48,6 +49,8 @@ public class VidasHud : MonoBehaviour
                 Luz2.SetActive(true);
                 vidas++;
                 humo.Stop();
+                GestorDeAudio.instancia.ReproducirSonido("Repos");
+                GestorDeAudio.instancia.PausarSonido("Alarma");
             }
             
           
@@ -72,15 +75,20 @@ public class VidasHud : MonoBehaviour
 
             else if (vidas == 2)
             {
+                GestorDeAudio.instancia.ReproducirSonido("Backup");
                 Luz2.SetActive(false);
                 vidas--;
+                GestorDeAudio.instancia.ReproducirSonido("Alarma");
                 humo.Play();
+
+                
             }
 
           else  if (vidas == 3)
             {
                 Luz3.SetActive(false);
                 vidas--;
+                GestorDeAudio.instancia.ReproducirSonido("Ouch");
             }
 
         }
@@ -99,6 +107,7 @@ public class VidasHud : MonoBehaviour
 
     }
 
+    
    
     }
 

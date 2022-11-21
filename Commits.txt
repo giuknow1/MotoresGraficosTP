@@ -21,3 +21,4 @@
 21. Agregadas texturas al escenario
 22. Emision de luz a los PickUps
 23. Avance en creacion del Nivel
+24. Avance en creacion del Nivel

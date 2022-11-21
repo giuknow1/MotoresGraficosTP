@@ -10,6 +10,7 @@ TagManager:
   - Bateria Grande
   - Energia Mala
   - Moneda
+  - Llave
   layers:
   - Default
   - TransparentFX

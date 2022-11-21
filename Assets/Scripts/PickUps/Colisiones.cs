@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Colisiones : MonoBehaviour
 
 {
+    public GameObject llave;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Corazon") == true)
@@ -43,6 +47,12 @@ public class Colisiones : MonoBehaviour
             GestorDeAudio.instancia.ReproducirSonido("Moneda");
         }
 
+        if (other.gameObject.CompareTag("Llave") == true)
+        {
+            other.gameObject.SetActive(false);
+            GestorDeAudio.instancia.ReproducirSonido("Moneda");
+            llave.SetActive(false);
+        }
 
 
     }
