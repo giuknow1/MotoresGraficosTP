@@ -11,6 +11,7 @@ public class Colisiones : MonoBehaviour
 
     public GameObject llave;
     public GameObject llave1;
+    public GameObject llave2;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -57,12 +58,16 @@ public class Colisiones : MonoBehaviour
 
             key++;
 
-            if (key == 3)
+            if (key == 1)
+            {
+                llave2.SetActive(false);
+            }
+            if (key == 4)
             {
                 llave1.SetActive(false);
             }
 
-            if (key == 4)
+            if (key == 7)
             {
                 llave.SetActive(false);
             }

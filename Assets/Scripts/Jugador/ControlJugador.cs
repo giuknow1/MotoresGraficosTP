@@ -17,6 +17,8 @@ public class ControlJugador : MonoBehaviour
 
     void Start()
     {
+        
+        Cursor.visible = false;
         GestorDeAudio.instancia.ReproducirSonido("Musica");
         rb = GetComponent<Rigidbody>();
     }
@@ -32,10 +34,7 @@ public class ControlJugador : MonoBehaviour
 
     transform.Translate(mov_horizontal, 0, mov_vertical);
 
-    if (Input.GetKeyDown("escape"))
-    {
-        Cursor.lockState = CursorLockMode.None;
-    }
+    
 
     //Salto
 
@@ -81,6 +80,7 @@ public class ControlJugador : MonoBehaviour
         }
     }
 
+    
 
     }
 
