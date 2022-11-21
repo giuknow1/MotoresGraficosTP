@@ -23,3 +23,4 @@
 23. Avance en creacion del Nivel
 24. Avance en creacion del Nivel
 25. Creado Prefab de enemigos y script para su funcionamiento (Mov. Vertical)
+26. Avances en creacion de nivel (Mayormente hecho)

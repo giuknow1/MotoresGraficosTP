@@ -6,9 +6,10 @@ public class UpDown1 : MonoBehaviour
 {
     bool tengoQueBajar = false;
 
+
     public float min = 5f;
     public float max = 10f;
-    float rapidez = 2.5f;
+    public float rapidez = 2.5f;
 
     void Update()
 

@@ -7,7 +7,10 @@ using UnityEngine;
 public class Colisiones : MonoBehaviour
 
 {
+    public int key = 0;
+
     public GameObject llave;
+    public GameObject llave1;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -51,9 +54,26 @@ public class Colisiones : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             GestorDeAudio.instancia.ReproducirSonido("Moneda");
-            llave.SetActive(false);
+
+            key++;
+
+            if (key == 3)
+            {
+                llave1.SetActive(false);
+            }
+
+            if (key == 4)
+            {
+                llave.SetActive(false);
+            }
+
         }
 
 
+
     }
+
+   
+        
+    
 }
