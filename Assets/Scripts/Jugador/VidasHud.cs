@@ -77,7 +77,7 @@ public class VidasHud : MonoBehaviour
 
                 humo.Stop();
                 SceneManager.LoadScene(0);
-                GestorDeAudio.instancia.ReproducirSonido("Reset");
+              
             }
 
             else if (vidas == 2)
