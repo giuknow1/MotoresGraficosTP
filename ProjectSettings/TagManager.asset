@@ -13,6 +13,7 @@ TagManager:
   - Llave
   - Enemigo
   - Lava
+  - Fuego
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class ControlJugador : MonoBehaviour
         
         Cursor.visible = false;
         GestorDeAudio.instancia.ReproducirSonido("Musica");
+        GestorDeAudio.instancia.ReproducirSonido("Reset");
         rb = GetComponent<Rigidbody>();
     }
 

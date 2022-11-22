@@ -67,7 +67,7 @@ public class Colisiones : MonoBehaviour
                 llave1.SetActive(false);
             }
 
-            if (key == 7)
+            if (key == 9)
             {
                 llave.SetActive(false);
             }

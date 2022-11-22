@@ -15,7 +15,18 @@ public class ResetLava : MonoBehaviour
             GestorDeAudio.instancia.PausarSonido("Alarma");
             humo.Stop();
             SceneManager.LoadScene(0);
-            GestorDeAudio.instancia.ReproducirSonido("Reset");
+            GestorDeAudio.instancia.ReproducirSonido("Vortice");
+            
+        }
+
+        if (other.gameObject.CompareTag("Fuego") == true)
+        {
+
+            GestorDeAudio.instancia.PausarSonido("Alarma");
+            humo.Stop();
+            SceneManager.LoadScene(0);
+            GestorDeAudio.instancia.ReproducirSonido("Lava");
+           
         }
     }
 }

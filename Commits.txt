@@ -27,3 +27,4 @@
 27. Finalizacion de nivel
 28. Agregado Script para resetear al perder todas las vidas/caer en lava
 29. Agregados 2 Shaders a LAVA y PORTAL. + Detalles en nivel
+30. Agregado limite de mapa + un shader para las paredes
