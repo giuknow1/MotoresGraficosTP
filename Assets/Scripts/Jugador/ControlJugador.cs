@@ -62,13 +62,13 @@ public class ControlJugador : MonoBehaviour
 
         if (other.gameObject.CompareTag("Bateria") == true)
         {
-            velocidad += 0.5f;
+            velocidad += 0.33f;
         }
 
 
         if (other.gameObject.CompareTag("Energia Mala") == true)
         {
-            if (velocidad > 7f)
+            if (velocidad > 5f)
             {
                 velocidad--;
             }
@@ -77,7 +77,7 @@ public class ControlJugador : MonoBehaviour
 
         if (other.gameObject.CompareTag("Bateria Grande") == true)
         {
-            velocidad += 3f;
+            velocidad += 2.5f;
         }
     }
 

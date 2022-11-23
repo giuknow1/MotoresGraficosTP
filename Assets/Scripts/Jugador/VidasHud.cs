@@ -18,13 +18,18 @@ public class VidasHud : MonoBehaviour
 
     public void Start()
     {
+        //Luces
         Luz1.SetActive(true);
         Luz2.SetActive(true);
         Luz3.SetActive(false);
 
         EscudoVida.SetActive(false);
 
+        //Humo
         humo.Stop();
+
+
+
     }
 
     public void OnTriggerEnter(Collider other)
