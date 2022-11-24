@@ -18,36 +18,38 @@ public class JetPack : MonoBehaviour
         c_combust = combustible;
     }
 
- 
+
     void Update()
     {
 
         if (Input.GetAxis("Jump") > 0f && c_combust > 0f)
         {
             GestorDeAudio.instancia.ReproducirSonido("Apagado");
-                c_combust -= Time.deltaTime;
-                rb.AddForce(rb.transform.up * empuje, ForceMode.Impulse);
-                effect.Play();
-                effect2.Play();
-            
+            c_combust -= Time.deltaTime;
+            rb.AddForce(rb.transform.up * empuje, ForceMode.Impulse);
+            effect.Play();
+            effect2.Play();
+
 
         }
-            else if (Physics.Raycast(groundedTransform.position, Vector3.down, 0.05f, LayerMask.GetMask("Grounded")) && c_combust < combustible)
+        else if (Physics.Raycast(groundedTransform.position, Vector3.down, 0.05f, LayerMask.GetMask("Grounded")) && c_combust < combustible)
         {
-            
-                c_combust += Time.deltaTime;
-                effect.Stop();
-                effect2.Stop();
-            
+
+            c_combust += Time.deltaTime;
+            effect.Stop();
+            effect2.Stop();
+
         }
-            else
-            {
+        else
+        {
             GestorDeAudio.instancia.ReproducirSonido("JetPack");
 
-                effect.Stop();
-                effect2.Stop();
-            
-        } 
+            effect.Stop();
+            effect2.Stop();
 
         }
+
+    }
+
+  
 }

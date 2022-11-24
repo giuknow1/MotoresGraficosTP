@@ -50,6 +50,12 @@ public class Colisiones : MonoBehaviour
             other.gameObject.SetActive(false);
             GestorDeAudio.instancia.ReproducirSonido("Moneda");
         }
+        
+        if (other.gameObject.CompareTag("Hongo") == true)
+        {
+            other.gameObject.SetActive(false);
+            GestorDeAudio.instancia.ReproducirSonido("Boost");
+        }
 
         if (other.gameObject.CompareTag("Llave") == true)
         {

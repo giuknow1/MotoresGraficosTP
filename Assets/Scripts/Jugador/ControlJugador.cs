@@ -79,7 +79,14 @@ public class ControlJugador : MonoBehaviour
         {
             velocidad += 2.5f;
         }
+
+        if (other.gameObject.CompareTag("Hongo") == true)
+        {
+            saltoVelocidad += 2f;
+        }
+
     }
+
 
     
 

@@ -14,7 +14,7 @@ public class JumpDown : MonoBehaviour
         Rigidbody rb = jumpPad.GetComponent<Rigidbody>();
         rb.AddForce(Vector3.up * altura);
         GestorDeAudio.instancia.ReproducirSonido("Boing");
-        transform.position -= transform.up * 2;
+        transform.position -= transform.up * 3;
     }
 }
 
