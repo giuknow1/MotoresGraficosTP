@@ -30,3 +30,4 @@
 30. Agregado limite de mapa + un shader para las paredes
 31. Agregadas plataformas de salto por contacto +script para su funcion
 32. Agregados efectos PostProcessing
+33. Agregadas nuevas plataformas de salto que bajan al saltar en ellas (+Script)
