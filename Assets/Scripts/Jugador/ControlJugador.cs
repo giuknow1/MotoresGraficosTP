@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlJugador : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class ControlJugador : MonoBehaviour
         GestorDeAudio.instancia.ReproducirSonido("Musica");
         GestorDeAudio.instancia.ReproducirSonido("Reset");
         rb = GetComponent<Rigidbody>();
+
     }
 
 

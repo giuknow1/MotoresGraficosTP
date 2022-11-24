@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 public class Colisiones : MonoBehaviour
@@ -13,7 +13,9 @@ public class Colisiones : MonoBehaviour
     public GameObject llave1;
     public GameObject llave2;
 
-    private void OnTriggerEnter(Collider other)
+    
+
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Corazon") == true)
         {
@@ -50,7 +52,7 @@ public class Colisiones : MonoBehaviour
             other.gameObject.SetActive(false);
             GestorDeAudio.instancia.ReproducirSonido("Moneda");
         }
-        
+
         if (other.gameObject.CompareTag("Hongo") == true)
         {
             other.gameObject.SetActive(false);
@@ -80,11 +82,30 @@ public class Colisiones : MonoBehaviour
 
         }
 
+        if (other.gameObject.CompareTag("Audio") == true)
+        {
+
+            GestorDeAudio.instancia.ReproducirSonido("Cerca");
+        }
+
+
+        if (other.gameObject.CompareTag("Ganar") == true)
+        {
+
+            GestorDeAudio.instancia.ReproducirSonido("Vortice");
+            GestorDeAudio.instancia.PausarSonido("Musica");
+            GestorDeAudio.instancia.PausarSonido("Alarma");
+
+
+            GestorDeAudio.instancia.ReproducirSonido("Win");
+
+            yield return new WaitForSeconds(4);
+            SceneManager.LoadScene(0);
+            
+
+        }
+    }
+
 
 
     }
-
-   
-        
-    
-}

@@ -32,3 +32,4 @@
 32. Agregados efectos PostProcessing
 33. Agregadas nuevas plataformas de salto que bajan al saltar en ellas (+Script)
 34. Agregado nuevo PowerUp que incrementa la altura del salto
+35. Agregado final de nivel con reinicio automatico
